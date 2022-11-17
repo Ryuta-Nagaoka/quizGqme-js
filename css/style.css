@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+body {
+  font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+}
+
+h1 {
+  text-align: center;
+  margin-top:250px;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #000000b5;
+}
+
+button {
+  width: 150px;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+#wrapper {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.setGame {
+  display: none;
+}
+.quizGame {
+  display: none;
+}
+
+#startBtn {
+  cursor: pointer;
+  width: 200px;
+  border-radius: 30px;
+  text-align: center;
+  padding: 12px;
+  margin: 50px auto 0;
+  background: #5ebddf;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  box-shadow: 0 5px 0 #365254;
+}
+
+#startBtn:hover {
+  transform: translateY(5px);
+  box-shadow: none;
+  transition: 0.3s;
+}
+
+#js-question {
+  margin: 30px auto 0 auto;
+  width: 90%;
+}
+
+#buttons {
+    width: 80%;
+    display: flex;
+    margin: 40px auto;
+    justify-content: center;
+}
+
+button {
+  margin: 0 20px;
+}
+
+.alert-primary {
+  color: #004085;
+  background-color: #ffffff;
+  border-color: #b8daff;
+}
+
+#close {
+  cursor: pointer;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  padding: 12px;
+  margin: 16px auto 0;
+  background: #5ebddf;
+  color: white;
+}
+#close:hover{
+  opacity: 0.7;
+}
+
+#close2 {
+  cursor: pointer;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  padding: 12px;
+  margin: 16px auto 0;
+  background: #5ebddf;
+  color: white;
+}
+#close2:hover{
+  opacity: 0.7;
+}
+
+#toTop {
+  cursor: pointer;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  padding: 12px;
+  margin: 16px auto 0;
+  background: #5ebddf;
+  color: white;
+}
+
+/* .close {
+  cursor: pointer;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  padding: 12px;
+  margin: 16px auto 0;
+  background: #5fc1be;
+  color: rgb(0, 0, 0);
+} */
+
+#mask {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#mask2 {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#modal {
+  background: #fff;
+  color: #555;
+  width: 70%;
+  padding: 40px;
+  border-radius: 4px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+#modal2 {
+  background: #fff;
+  color: #555;
+  width: 90%;
+  padding: 40px;
+  border-radius: 4px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 2;
+  transition: 0.3s;
+}
+
+#modal2 h2 {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+#modal p {
+  margin: 0 0 20px;
+}
+
+#mask.hidden {
+  display: none;
+}
+
+#modal.hidden {
+  display: none;
+}
+
+#mask2.hidden {
+  display: none;
+}
+
+#modal2.hidden {
+  display: none;
+}
+
+.sq{
+  display: none;
+}
+
+.toTop {
+  display: none;
+}
+.close2 {
+  display: none;
+}
+
+@media screen and (max-width: 450px) { 
+  #wrapper {
+    width: 96%;
+    margin: 20px auto 0 auto;
+  }
+  #buttons {
+    display: block;
+    width: 98%;
+    margin: 20px auto;
+    text-align: center;
+  }
+  button {
+    margin: 0 0 20px 0;
+  }
+  .btn{
+    font-size: 15px;
+  }
+  #js-question {
+    margin: 230px auto 50px auto;
+    width: 98%;
+  }
+  #modal {
+    width: 85%;
+    margin-top: 120px;
+  }
+  #modal2 {
+    margin-top: 120px;
+  }
+  .sq {
+    display: block;
+  }
+  #start{
+    padding-top: 80px;
+  }
+}

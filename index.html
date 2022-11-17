@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favi.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>クイズゲーム</title>
+</head>
+<body style="background-image: url(img/bg01.jpg);background-size: 300%;">
+  <section id="start">
+    <h1>クイズゲーム</h1>
+    <div id="startBtn">
+      スタート！
+    </div>
+  </section>
+  <div id="wrapper" class="quizGame">
+    <div id="js-question" class="alert alert-primary" role="alert">
+      A simple primary alert—check it out!
+    </div>
+    <div id="buttons">
+      <button type="button" class="btn btn-primary">Primary</button><br class="sq">
+      <button type="button" class="btn btn-primary">Primary</button><br class="sq">
+      <button type="button" class="btn btn-primary">Primary</button><br class="sq">
+      <button type="button" class="btn btn-primary">Primary</button><br class="sq">
+    </div>
+
+    <div id="mask" class="hidden"></div>
+    <section id="modal" class="hidden">
+      <h2 id="correctTtl">答え：264時間</h2>
+      <p id="explanation">
+        ギネス記録に記録されている「人が眠らずに起きていた時間」の最高記録は、なんと264時間12分（11日間12分）です！
+        1964年にアメリカの高校生が達成しました。
+      </p>
+      <div id="close">
+        閉じる
+      </div>
+    </section>
+
+    <div id="mask2" class="hidden"></div>
+    <section id="modal2" class="hidden">
+      <h2 id="result">正解数</h2>
+      <div id="close2">
+        回答・解説を見る
+      </div>
+      <div id="toTop" class="toTop">
+        トップへ
+      </div>
+    </div>
+    
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>
